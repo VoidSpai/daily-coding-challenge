@@ -13,3 +13,24 @@ class Solution:
             
             # Store the current number with its index
             seen[value] = index
+
+
+""" Example Code without: 
+    "from typing import list"
+
+class Solution:
+    def twoSum(self, nums, target):
+        seen = {}  # Create an empty dictionary
+        
+        for index, value in enumerate(nums):
+            needed = target - value  # Calculate the number we need
+            
+            if needed in seen:
+                # Found the pair
+                return [seen[needed], index]
+            
+            # Store the current number with its index
+            seen[value] = index
+
+
+            """
